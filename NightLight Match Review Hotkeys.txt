@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         NightLight Match Review Hotkeys
 // @namespace    http://tampermonkey.net/
-// @version      2025-08-16
-// @description  Adds hotkeys to the NightLight match review screen
+// @version      2025-08-17
+// @description  Adds hotkeys to the NightLight match review screen. 1,2,3,4,5 picks a row. c toggles crossplay. r,f,m sets player association. b toggles bot. alt+m sets map.
 // @author       Brok3nPix3l
 // @match        https://nightlight.gg/review/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=nightlight.gg
