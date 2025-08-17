@@ -35,8 +35,12 @@
             "me": scoreboard.children[i+1].children[0].children[2].children[5]
         };
     }
-    const selectedOutlineStyle = '2px solid red';
     let selectedRow = null;
+
+    const otherOptions = document.querySelector('div._matchContainerOptions_fi063_601');
+    const map = otherOptions.children[0].children[0].children[0].children[1].children[0].children[0].children[1];
+
+    const selectedOutlineStyle = '2px solid red';
 
     document.addEventListener('keydown', function(event) {
         switch (event.key) {
@@ -74,6 +78,10 @@
                 playerAssociations[selectedRow].friend.click();
                 break;
             case 'm':
+                if (event.altKey) {
+                    map.click();
+                    break;
+                }
                 if (selectedRow === null) {
                     break;
                 }
